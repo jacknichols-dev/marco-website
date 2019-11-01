@@ -1,0 +1,75 @@
+#section-hero {
+  color: $color-2;
+  text-align: center;
+  background: black;
+  color: $color-2;
+  line-height: 1.7;
+}
+
+#section-review {
+  position: relative;
+  padding: 26rem 0;
+
+  @include respond(tab-land) {
+    padding: 20rem 0;
+  }
+  @include respond(tab-port) {
+    padding: 10rem 0 10rem 0;
+  }
+}
+
+#section-about {
+  position: relative;
+  padding: 13rem;
+  background-color: $color-2;
+
+  @include respond(tab-port) {
+    padding: 8rem;
+  }
+
+}
+
+#section-food {
+  position: relative;
+  height: 100vh;
+
+  @include respond(tab-port) {
+    margin-top: 25rem;
+    height: 100%;
+  }
+}
+
+#section-insta {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-2, 1),
+    rgba($color-2, 0.3)
+  );
+  font-family: $font-1;
+  color: $color-1;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+#section-footer {
+  position: relative;
+  color: $color-2;
+  margin-top: 40rem;
+  padding: 14rem;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba($color-neon, 1) 0%,
+    rgba($color-neon, 0.9) 30%,
+    rgba($color-neon, 0.8) 60%,
+    rgba($color-neon, 0.7) 100%
+  );
+  border-top: 0.1rem solid $color-2;
+
+  @include respond(tab-port) {
+    margin-top: 30rem;
+  }
+}

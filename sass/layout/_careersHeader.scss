@@ -1,0 +1,41 @@
+.careers {
+  &__header {
+    &--banner {
+      background: url(../img/careers-banner.jpg) no-repeat;
+      background-size: cover;
+      height: 80vh;
+      width: 100%;
+      background-position: top;
+    }
+
+    &--grey {
+      width: 100%;
+      height: 5rem;
+      background-color: $color-2;
+    }
+
+    &--box {
+      position: absolute;
+      border-radius: 3px;
+      display: block;
+      width: 40rem;
+      top: 25%;
+      left: 50%;
+      background-color: white;
+      box-shadow: $shadow;
+      padding: 4rem;
+    }
+
+    &--title {
+      font-size: 5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    &--para {
+        margin-top: 2rem;
+        line-height: 1.3;
+        font-size: 1.5rem;
+    }
+  }
+}

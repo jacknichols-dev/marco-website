@@ -1,0 +1,45 @@
+.insta {
+
+  
+  &__textbox {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    &--para {
+      font-size: 2rem;
+      font-family: $font-2;
+    }
+
+    &--heading {
+      font-weight: 300;
+    }
+
+    &--icon {
+      margin-top: 3rem;
+      width: 3em;
+      height: 3rem;
+    }
+  }
+}
+
+.insta-grid {
+  @include centerBox;
+
+  &__photo {
+    display: flex;
+
+    & > * {
+      padding: 0.5rem;
+      height: 20rem;
+    }
+
+    &--5 {
+      width: 33.6rem;
+    }
+  }
+}

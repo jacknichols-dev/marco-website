@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jorge &#8212; Italian Restaurant</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="navigation">
+      <a href="index.html" class="navigation__logo--link">
+        <img src="img/logo.svg" type="image/svg" alt="logo" class="navigation__logo"/>
+      </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
+            <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+            <li class="navigation__item"><a href="careers.html" class="navigation__link">Careers</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Booking</a></li>
+          </ul>
+      </div>
+    </header>
+
+        <!--Toggle nav-->
+        <div class="hamburger">
+          <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+          <label for="navi-toggle" class="hamburger__btn">
+            <span class="hamburger__icon">&nbsp;</span>
+          </label>
+          <div class="hamburger__bg">&nbsp;</div>
+          <nav class="hamburger__nav">
+            <ul class="hamburger__list">
+              <li class="hamburger__item"><a href="index.html" class="hamburger__link">Home</a></li>
+              <li class="hamburger__item"><a href="menu.html" class="hamburger__link">Menu</a></li>
+              <li class="hamburger__item"><a href="contact.html" class="hamburger__link">Contact</a></li>
+              <li class="hamburger__item"><a href="careers.html" class="hamburger__link">careers</a></li>
+              <li class="hamburger__item"><a href="#" class="hamburger__link">Booking</a></li>
+            </ul>
+          </nav>
+        
+        </div>
+    
+      <main id="section-contact">
+          <div class="contact">
+              <div class="contact__bg"></div>
+              <div class="row">
+                  <div class="col-1-of-3">
+                      <div class="contact__panel">
+                          <h1 class="contact__title"><span>Contact</span></h1>
+                          <div class="contact__tel">
+                            <h3 class="contact__tel--heading">Telephone</h3>
+                            <p class="contact__tel--number">020 7226 2733</p>
+                          </div>
+                        <div class="contact__find">
+                          <h3 class="contact__find--heading">Find us</h3>
+                          <p class="contact__find--address">
+                            300 - 302 <br>
+                            St Paul's Road, London, <br>
+                            N1 2LH
+                          </p>
+                        </div>
+                        <div class="contact__input">
+                            <svg class="contact__input--icon">
+                                <use xlink:href="/img/sprite2.svg#icon-profile"></use>
+                            </svg>
+                          <input type="text" placeholder="Name" class="contact__input--name" id="name" required>
+                          <label for="name" class="contact__input--label">Full name</label>
+                        </div>
+                        <div class="contact__input">
+                            <svg class="contact__input--icon">
+                                <use xlink:href="/img/sprite2.svg#icon-envelope"></use>
+                            </svg>
+    
+                          <input type="email" placeholder="Email" class="contact__input--email" id="email" required>
+                          <label for="email" class="contact__input--label">Email</label>
+
+                        </div>
+                        <textarea name="comment" placeholder="Message..." class="contact__input--message" cols="30" rows="4" id="message" required></textarea>
+                        <label for="message" class="contact__input--messageLabel">Message</label>
+
+                        <a href="#">
+                          <div class="contact__button">
+                              <input type="button" class="contact__button--send" value="Submit">
+                          </div>
+                        </a>               
+                        </div>
+                    </div>
+                         
+                  <div class="col-2-of-3">
+                        <div id="map"></div>
+                  </div>           
+              </div>
+              <!--<div class="row">
+                  <div class="col-1-of-3">
+                      <div class="contact__panel">
+                          <h1 class="contact__title">Contact</h1>
+                          <div class="contact__tel">
+                            <h3 class="contact__tel--heading">Telephone</h3>
+                            <p class="contact__tel--number">020 7226 2733</p>
+                          </div>
+                        <div class="contact__find">
+                          <h3 class="contact__find--heading">Find us</h3>
+                          <p class="contact__find--address">
+                            300 - 302 <br>
+                            St Paul's Road, London, <br>
+                            N1 2LH
+                          </p>
+                        </div>
+                        <div class="contact__input">
+                            <svg class="contact__input--icon">
+                                <use xlink:href="img/sprite2.svg#icon-profile"></use>
+                            </svg>
+                          <input type="text" placeholder="Name" class="contact__input--name">
+                        </div>
+                        <div class="contact__input">
+                            <svg class="contact__input--icon">
+                                <use xlink:href="img/sprite2.svg#icon-envelope"></use>
+                            </svg>
+    
+                          <input type="text" placeholder="Email" class="contact__input--email">
+                        </div>
+                        <textarea name="comment" placeholder="Message..." class="contact__input--message" cols="30" rows="4"></textarea>
+                        <a href="#">
+                          <div class="contact__button">
+                              <input type="button" class="contact__button--send" value="Submit">
+                          </div>
+                        </a>               
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-2-of-3">
+                      <div id="map"></div>
+                  </div>           
+              </div>
+              <div class="row">
+                <div class="col-1-of-3">
+                    /*<div class="contact__panel">
+                      <h1 class="contact__title">Contact</h1>
+                      <div class="contact__tel">
+                        <h3 class="contact__tel--heading">Telephone</h3>
+                        <p class="contact__tel--number">020 7226 2733</p>
+                      </div>
+                    <div class="contact__find">
+                      <h3 class="contact__find--heading">Find us</h3>
+                      <p class="contact__find--address">
+                        300 - 302 <br>
+                        St Paul's Road, London, <br>
+                        N1 2LH
+                      </p>
+                    </div>
+                    <div class="contact__input">
+                        <svg class="contact__input--icon">
+                            <use xlink:href="img/sprite2.svg#icon-profile"></use>
+                        </svg>
+                      <input type="text" placeholder="Name" class="contact__input--name">
+                    </div>
+                    <div class="contact__input">
+                        <svg class="contact__input--icon">
+                            <use xlink:href="img/sprite2.svg#icon-envelope"></use>
+                        </svg>
+
+                      <input type="text" placeholder="Email" class="contact__input--email">
+                    </div>
+                    <textarea name="comment" placeholder="Message..." class="contact__input--message" cols="30" rows="4"></textarea>
+                    <a href="#">
+                      <div class="contact__button">
+                          <input type="button" class="contact__button--send" value="Submit">
+                      </div>
+                    </a>               
+                    </div>
+                </div>-->
+              
+          </div>
+      </main>
+
+
+      <section id="section-footer">
+          <div class="row">
+              <div class="col-1-of-2">
+                <div class="footer">
+                  <div class="footer__hours">
+                      <h3 class="footer__title">Opening times</h3>
+                      <div class="footer__lunch">
+                          <b>Lunch</b>  <br>
+                          Monday - Saturday <br>
+                          12:30 to 14:45
+                      </div>
+                      <div class="footer__dinner">
+                          <b>Dinner</b> <br>
+                          Monday - Saturday <br>
+                          18:00 to 22:15
+                      </div>
+                      <div class="footer__sunday">
+                          <b>Sunday</b> <br>
+                          12:00 to 14:45 <br>
+                          18:00 to 21:15
+                      </div>    
+                  </div>
+                </div>
+              </div>
+           <div class="col-1-of-2">
+              <div class="footer">
+                <div class="footer__details">
+                    <h3 class="footer__title">Contact us</h3>
+                    <div class="footer__address">
+                        91  Marlborough Crescent, <br>
+                        SOUTH REDBRIGGS,<br>
+                        AB53 2NR
+                    </div>
+                    <div class="footer__contact">
+                        <b>079 6614 5297</b> <br>
+                        enquiries@payspun.com
+                    </div>         
+                </div>
+                </div>
+                </div> 
+                </div>
+           </div>
+           <div class="footer__links">
+              <h3 class="footer__title title-center">Follow us on:</h3>
+              <div class="footer__icon">
+                  <a href="#"><img src="img/Insta-Icon.svg" alt="Instagram icon" class="footer__icon--insta"></a>
+                  <a href="#"><img src="img/fb-Icon.svg" alt="Instagram icon" class="footer__icon--fb"></a>
+              </div>
+           </div>
+           <div class="copyright">
+              <p class="copyright__paragraph">Copyright &copy; 2019 - concept site, built by Jack Nichols.</p>
+          </div>      
+      </section>
+    
+      <script>
+        function initMap(){
+          let options = {
+            zoom:10,
+            center: {lat:51.5074, lng:-0.1278}
+          }
+          let map = new google.maps.Map(document.getElementById('map'), options);
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFwCKbQe7GfP2Uin8yptn3ofIfVS9yJSM&callback=initMap">
+      </script>
+  </body>
+  </html>

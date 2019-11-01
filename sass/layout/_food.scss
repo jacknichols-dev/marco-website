@@ -1,0 +1,98 @@
+.food {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+
+  @include respond(tab-land) {
+    top: 30%;
+  }
+
+  @include respond(tab-port) {
+    top: 3%;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+  }
+
+  &__paragraph {
+    max-width: 85rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 2.1rem;
+
+    @include respond(tab-port) {
+      max-width: 90rem;
+    }
+  }
+
+  &__pic {
+    padding-top: 50rem;
+    border-radius: 2px;
+    transition: all 0.3s;
+
+    &--1 {
+      width: 100%;
+      background-color: rgb(26, 26, 26);
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.1) translateY(-2%);
+        opacity: 0.5;
+      }
+    }
+
+    &--2 {
+      width: 100%;
+      outline-offset: 0.4rem;
+      transition: all 0.2s;
+      transform: translateY(-7rem);
+
+      &:hover {
+        transform: scale(1.1) translateY(-7rem);
+        opacity: 0.5;
+      }
+    }
+
+    &--3 {
+      width: 100%;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.1) translateY(-2%);
+        opacity: 0.5;
+      }
+    }
+  }
+  &__picContent {
+    text-align: center;
+    color: $color-1;
+    line-height: 1.2;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &--1 {
+      margin-bottom: 5rem;
+    }
+    &--2 {
+      display: none;
+    }
+    &--3 {
+      margin-bottom: 5rem;
+    }
+  }
+}

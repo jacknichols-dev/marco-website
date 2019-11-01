@@ -1,0 +1,73 @@
+.navigation {
+  position: relative;
+  z-index: 10;
+  transition: all 0.2s 0.5s;
+
+  &__bg {
+    @include respond(phone) {
+      position: fixed;
+      display: block;
+      width: 100vw;
+      height: 11rem;
+      top: 0;
+      background-color: rgba($color-1, 0.9);
+    }
+
+    @include respond(phone-small) {
+      height: 6rem;
+    }
+  }
+
+  &__logo {
+    display: block;
+    position: absolute;
+    width: 13rem;
+    top: 5rem;
+    left: 16rem;
+    animation: logo 1s 0.5s ease-out;
+    animation-fill-mode: backwards;
+
+    @include respond(tab-land) {
+      left: 10rem;
+    }
+
+    @include respond(phone) {
+      width: 10rem;
+      left: 9rem;
+    }
+    @include respond(phone-small) {
+      width: 7rem;
+      left: 4rem;
+      top: 2.4rem;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 5rem;
+    right: 16rem;
+
+    @include respond(tab-land-small) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: white;
+      margin: 0 0.5rem;
+      padding: 1rem 2rem;
+    }
+  }
+}

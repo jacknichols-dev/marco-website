@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marco &#8212; Italian Restaurant</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+
+    
+    <header class="navigation">
+      <div class="navigation__bg">
+          <a href="index.html" class="navigation__logo--link">
+              <img src="img/logo.svg" type="image/svg" alt="logo" class="navigation__logo"/>
+            </a>
+                <ul class="navigation__list">
+                  <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+                  <li class="navigation__item"><a href="menu.html" class="navigation__link">Menu</a></li>
+                  <li class="navigation__item"><a href="contact.html" class="navigation__link">Contact</a></li>
+                  <li class="navigation__item"><a href="careers.html" class="navigation__link">Careers</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">Booking</a></li>
+                </ul>
+      
+      </div>
+    </header>
+
+    <!--Toggle nav-->
+    <div class="hamburger">
+      <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="hamburger__btn">
+        <span class="hamburger__icon">&nbsp;</span>
+      </label>
+      <div class="hamburger__bg">&nbsp;</div>
+      <nav class="hamburger__nav">
+        <ul class="hamburger__list">
+          <li class="hamburger__item"><a href="index.html" class="hamburger__link">Home</a></li>
+          <li class="hamburger__item"><a href="menu.html" class="hamburger__link">Menu</a></li>
+          <li class="hamburger__item"><a href="contact.html" class="hamburger__link">Contact</a></li>
+          <li class="hamburger__item"><a href="careers.html" class="hamburger__link">careers</a></li>
+          <li class="hamburger__item"><a href="#" class="hamburger__link">Booking</a></li>
+        </ul>
+      </nav>
+    
+    </div>
+
+    <!--HERO SLIDER-->
+
+    <section id="section-hero">
+
+        <div class="carousel">
+          <div class="carousel__slide current">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">10am</h1>
+              <h1 class="carousel__content--heading">Aprons on and pasta rolled</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">12pm</h1>
+              <h1 class="carousel__content--heading">Ready for lunch service</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">2pm</h1>
+              <h1 class="carousel__content--heading">Lunch service is in full flow</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">4pm</h1>
+              <h1 class="carousel__content--heading">A briefing for the evenings bookings and menu</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">7pm</h1>
+              <h1 class="carousel__content--heading">Kitchen in full flow</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">9pm</h1>
+              <h1 class="carousel__content--heading">Plating up the food</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">10pm</h1>
+              <h1 class="carousel__content--heading">Desserts are rolling out</h1>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="carousel__content">
+              <h1 class="carousel__content--time">11pm</h1>
+              <h1 class="carousel__content--heading">Drinks anyone?</h1>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="button__link">Make a booking</a>
+        <div class="buttons">
+          <button id="prev"><i class="fas fa-arrow-left"></i></button>
+          <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </section>
+
+
+
+
+<!--
+    <section id="section-hero">
+      <div class="carousel">
+        <div class="carousel__textbox">
+          <div class="carousel__textbox--time">10am</div>
+          <div class="carousel__textbox--title">Aprons on and pasta rolled</div>
+          <a href="#" class="btn btn-carousel">Make a booking</a>
+        </div>
+      </div>
+    </section>
+-->
+
+    <!--REVIEW SECTION-->
+
+
+
+
+    <section id="section-review">
+
+      <div class="review-carousel">
+        <div class="review-carousel__track-container">
+          <ul class="review-carousel__track">
+            <li class="review-carousel__slide current">
+                <h1 class="review-carousel__comment">“Amazing food with excellent staff. I highly recommend this restaurant.”</h1>
+                <p class="review-carousel__user">Karen Grimes - Observer</p>        
+            </li>
+            <li class="review-carousel__slide">
+                <h1 class="review-carousel__comment">“Spectacular food. impecible service and fast waiting time between each course.”</h1>
+                <p class="review-carousel__user">Luigi Mario- times</p>
+            </li>
+            <li class="review-carousel__slide">
+                <h1 class="review-carousel__comment">“The food is well presented, of good quality and served by friendly and attentive staff.”</h1>
+                <p class="review-carousel__user">Luke shaw - The Food Guide</p>        
+            </li>
+          </ul>
+        </div>
+        <div class="review-carousel__nav">
+            <button class="review-carousel__indicator current-slide"></button>
+            <button class="review-carousel__indicator"></button>
+            <button class="review-carousel__indicator"></button>
+          </div>
+
+      </div>
+      <!--
+      <div class="review-slide current">
+        <h1 class="review-slide__comment">“Amazing food with excellent staff. I highly recommend this restaurant.”</h1>
+        <p class="review-slide__user">Karen Grimes - Observer</p>
+      </div>
+      <div class="review-slide">
+        <h1 class="review-slide__comment">“Spectacular food. impecible service and fast waiting tiime between each course.”</h1>
+        <p class="review-slide__user">Luigi Mario- times</p>
+      </div>
+      <div class="review-slide">
+        <h1 class="review-slide__comment">“The food is well presented, of good quality and served by friendly and attentive staff.”</h1>
+        <p class="review-slide__user">Luke shaw - The Food Guide</p>
+      </div>
+      <div class="review-slide">
+        <h1 class="review-slide__comment">“A wonderful friendly restaurant with an excellent kitchen and wine list - don’t miss this if you are in London.”</h1>
+        <p class="review-slide__user">Maria Thompson - Evening Standard</p>
+      </div>
+
+
+      -->
+
+    </section>
+
+    <section id="section-about">
+        <h1 class="section-about__heading">About us</h1>
+        <div class="row">
+            <div class="col-1-of-3">
+              <div class="about">
+                <p class="about__paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Architecto optio repellat aspernatur exercitationem aliquid 
+                  maxime magnam quos, id nobis incidunt facilis saepe veritatis 
+                  iure, ratione, suscipit quasi ducimus illo maiores omnis error fugiat 
+                  deleniti! Nemo blanditiis laboriosam cumque possimus inventore illo 
+                  omnis maxime consectetur nobis. Architecto dolorum officia 
+                  libero reprehenderit non, laborum cumque esse rem ut mollitia 
+                  dolorem quis error soluta facere ratione animi quam magni, sint 
+                  culpa! Minima corrupti ratione debitis optio ducimus excepturi 
+                  dolorum adipisci numquam voluptates qui! Dolorum, temporibus quasi! 
+                  Error, sed perspiciatis? Tempora vitae harum voluptate!
+                </p>
+              </div>
+            </div>
+            <div class="col-2-of-3">
+                <img src="img/about.jpg" alt="about-us photo" class="about__photo">
+                <p class="about__photo--desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, consequuntur.</p>
+            </div>           
+    </section>
+
+        <!--FOOD SECTION-->
+
+
+   <section id="section-food">
+      <div class="food">
+        <img src="img/icon.svg" alt="icon" class="food__icon">
+        <h1 class="food__heading">Our food</h1>
+        <p class="food__paragraph">Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Cupiditate repellendus accusantium quae id 
+          nostrum a sed. Eos vel nisi, dolorum quasi culpa reprehenderit 
+          distinctio dolores, dolore dicta corrupti doloremque, soluta 
+          perferendis ad odit nam veniam rem commodi. Expedita adipisci 
+          architecto ratione possimus eaque totam nulla, ut sed atque quas 
+          quia ea ipsum officia facere asperiores sapiente eligendi, 
+          nesciunt distinctio eius.
+        </p>
+      </div>
+      <a href="menu.html" class="btn btn-food">See our full menu</a>
+
+      <div class="row">
+
+        <!--CARD 1-->
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__img card__img--1">
+                &nbsp;
+              </div>
+            <h4 class="card__heading">
+              Starters
+            </h4>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <ul class="card__side--back-list">
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+                <li class="card__side--back-item">Lorem, ipsum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 2-->
+        <div class="col-1-of-3">
+            <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__img card__img--2">
+                    &nbsp;
+                  </div>
+                <h4 class="card__heading">
+                  Mains
+                </h4>
+                </div>
+                <div class="card__side card__side--back card__side--back-2">
+                  <ul class="card__side--back-list">
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>                 
+                  </ul>
+                </div>
+              </div>  
+        </div>
+
+        <!--CARD 3-->
+        <div class="col-1-of-3">
+            <div class="card">
+                <div class="card__side card__side--front">
+                  <div class="card__img card__img--3">
+                    &nbsp;
+                  </div>
+                <h4 class="card__heading">
+                  Desserts
+                </h4>
+                </div>
+                <div class="card__side card__side--back card__side--back-3">
+                  <ul class="card__side--back-list">
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>
+                    <li class="card__side--back-item">Lorem, ipsum.</li>                 
+                  </ul>
+                </div>
+              </div>
+    
+        </div>
+      </div>
+      
+       <!-- 
+      <div class="food__pic">
+        <div class="row">
+            <div class="col-1-of-3">
+              <a href="menu.html" class="food__pic--link">
+              <img src="img/food-1.jpg" alt="food item 1" class="food__pic--1">
+              </a>
+            </div>
+
+            <div class="col-1-of-3">
+              <a href="menu.html" class="food__pic--link">
+              <img src="img/food-2.jpg" alt="food item 2" class="food__pic--2">
+            </a>
+            </div>
+
+            <div class="col-1-of-3">
+                <a href="menu.html" class="food__pic--link">
+              <img src="img/food-3.jpg" alt="food item 3" class="food__pic--3">
+              </a>
+            </div>
+
+        </div>
+      </div> -->
+    </section>
+
+
+
+    <!--INSTAGRAM SECTION-->
+
+    <!-- <section id="section-insta">
+      <div class="insta">
+        <div class="insta__textbox">
+            <p class="insta__textbox--para">Follow us on</p>
+            <h1 class="insta__textbox--heading">Instagram</h1>
+            <a href="" class="insta__textbox--link">
+              <img src="img/Insta-Icon-dark.svg" alt="instagram icon" class="insta__textbox--icon">
+            </a>
+        </div>
+
+
+        
+        <div class="insta-grid">
+          
+          <div class="insta-grid__photo">
+              <img src="img/instaImg-1.jpg" alt="instagram-pic 1" class="insta-grid__photo--1">
+              <img src="img/instaImg-2.jpg" alt="instagram-pic 2" class="insta-grid__photo--2">
+              <img src="img/instaImg-3.jpg" alt="instagram-pic 3" class="insta-grid__photo--3">
+              <img src="img/instaImg-4.jpg" alt="instagram-pic 4" class="insta-grid__photo--4">
+          </div>
+          <div class="insta-grid__photo">
+              <img src="img/instaImg-5.jpg" alt="instagram-pic 5" class="insta-grid__photo--5">
+              <img src="img/instaImg-6.jpg" alt="instagram-pic 6" class="insta-grid__photo--6">
+              <img src="img/instaImg-7.jpg" alt="instagram-pic 7" class="insta-grid__photo--7">
+              <img src="img/instaImg-8.jpg" alt="instagram-pic 8" class="insta-grid__photo--8">
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </section> -->
+
+      <!--FOOTER SECTION-->
+
+
+    <section id="section-footer">
+        <div class="row">
+            <div class="col-1-of-2"> 
+              <div class="footer">
+                <div class="footer__hours">
+                    <h3 class="footer__title">Opening times</h3>
+                    <div class="footer__lunch">
+                        <b>Lunch</b>  <br>
+                        Monday - Saturday <br>
+                        12:30 to 14:45
+                    </div>
+                    <div class="footer__dinner">
+                        <b>Dinner</b> <br>
+                        Monday - Saturday <br>
+                        18:00 to 22:15
+                    </div>
+                    <div class="footer__sunday">
+                        <b>Sunday</b> <br>
+                        12:00 to 14:45 <br>
+                        18:00 to 21:15
+                    </div>    
+                </div>
+              </div>
+            </div>
+         <div class="col-1-of-2">
+            <div class="footer">
+              <div class="footer__details">
+                  <h3 class="footer__title">Contact us</h3>
+                  <div class="footer__address">
+                      91  Marlborough Crescent, <br>
+                      SOUTH REDBRIGGS,<br>
+                      AB53 2NR
+                  </div>
+                  <div class="footer__contact">
+                      <b>079 6614 5297</b> <br>
+                      enquiries@payspun.com
+                  </div>         
+              </div>
+              </div>
+              </div> 
+              </div>
+         </div>
+         <div class="footer__links">
+            <h3 class="footer__title title-center footer__title--social">Follow us on</h3>
+            <div class="footer__icon">
+                <a href="#"><img src="img/Insta-Icon.svg" alt="Instagram icon" class="footer__icon--insta"></a>
+                <a href="#"><img src="img/fb-Icon.svg" alt="Instagram icon" class="footer__icon--fb"></a>
+            </div>
+         </div>
+         <div class="copyright">
+            <p class="copyright__paragraph">Copyright &copy; 2019 - concept site. built by Jack Nichols.</p>
+        </div>      
+    </section>
+    
+
+
+
+    <!--
+      <div class="food__pic">
+        <img src="img/food-1.jpg" alt="food item 1" class="food__pic--1">
+        <img src="img/food-2.jpg" alt="food item 2" class="food__pic--2">
+        <img src="img/food-3.jpg" alt="food item 3" class="food__pic--3">    
+    </div>
+    -->
+
+  <!-- <div class="grid">
+      <div class="row">
+        <div class="col-1-of-3">
+            col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+            col 2 of 3
+        </div>           
+    </div>
+    -->
+
+    <!--
+    <div class="row">
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          col 1 of 3
+        </div>
+    </div>
+    -->
+
+    <script src="js/carousel.js"></script>
+  </body>
+</html>

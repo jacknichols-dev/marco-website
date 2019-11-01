@@ -1,0 +1,17 @@
+#section-menu-nav {
+  position: relative;
+  padding: 15rem 0;
+}
+
+#section-menu {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  border: 1px solid $color-grey;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba($color-2, 0.3),
+    rgba($color-2, 1)
+  ); // rgb(242, 242, 244);
+
+}

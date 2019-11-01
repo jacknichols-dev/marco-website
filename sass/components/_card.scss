@@ -1,0 +1,111 @@
+.card {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 50rem;
+  margin-top: 50rem;
+
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
+
+  &__side {
+    position: absolute;
+    box-shadow: $shadow-1;
+    border-radius: 0.5rem;
+    border: solid white 0.5rem;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 50rem;
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+    color: white;
+    backface-visibility: hidden;
+
+    @include respond(tab-port) {
+      top: 20rem;
+      height: 100%;
+    }
+
+    //BACKSIDE STYLING
+
+    &--back {
+      transform: rotateY(-180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+            to bottom right,
+            rgba($color-blue, 0.2),
+            $color-neon
+          ),
+          url(../img/garlic-bread.jpg);
+        background-size: cover;
+      }
+      &-2 {
+        background-image: linear-gradient(
+            to bottom right,
+            rgba($color-blue, 0.2),
+            $color-neon
+          ),
+          url(../img/pasta-5.jpg);
+        background-size: cover;
+      }
+      &-3 {
+        background-image: linear-gradient(
+            to bottom right,
+            rgba($color-blue, 0.2),
+            $color-neon
+          ),
+          url(../img/dessert-1.jpg);
+        background-size: cover;
+      }
+      &-list {
+        @include centerBox;
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+      }
+
+      &-item {
+        font-size: 2rem;
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //FRONT SIDE STYLING
+
+  &__img {
+    background-size: cover;
+    height: 80%;
+    background-blend-mode: screen;
+
+    &--1 {
+      background-image: url(../img/entry-salad.jpg);
+    }
+    &--2 {
+      background-image: url(../img/pizza-1.jpg);
+    }
+    &--3 {
+      background-image: url(../img/dessert.jpg);
+    }
+  }
+  &__heading {
+    color: $color-neon;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}

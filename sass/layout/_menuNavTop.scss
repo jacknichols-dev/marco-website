@@ -1,0 +1,55 @@
+.menu-navigation {
+  position: relative;
+  z-index: 10;
+  transition: all 0.2s 0.5s;
+
+  &__logo {
+    display: block;
+    position: absolute;
+    width: 13rem;
+    top: 5rem;
+    left: 16rem;
+    animation: logo 1s 0.5s ease-out;
+    animation-fill-mode: backwards;
+
+    @include respond(tab-land) {
+      left: 10rem;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 5rem;
+    right: 16rem;
+
+    @include respond(tab-land-small) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0;
+
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: $color-1;
+      margin: 0 0.5rem;
+      padding: 1rem 2rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-1;
+      transition: all 0.1s;
+    }
+  }
+}

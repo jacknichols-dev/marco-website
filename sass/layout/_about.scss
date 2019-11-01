@@ -1,0 +1,46 @@
+.section-about__heading {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    text-align: center;
+    padding-bottom: 11.5rem;
+    font-weight: 300;
+}
+
+
+.about {
+
+    &__paragraph {
+        letter-spacing: .5px;
+        line-height: 2.2rem;
+        font-weight: 300;
+
+        @include respond(small-desktop) {
+            font-size: 1.9rem;
+            line-height: 2;
+        }
+
+
+        @include respond(tab-land) {
+            font-size: 1.7rem;
+        }
+
+        @include respond(tab-port) {
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+        border-radius: .5px;
+
+        &--desc {
+            font-size: 1.2rem;
+            letter-spacing: .2px;
+            float:right;
+            margin-top: 1rem;           
+        }
+    }
+}

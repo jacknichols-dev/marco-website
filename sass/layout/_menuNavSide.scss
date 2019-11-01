@@ -1,0 +1,84 @@
+.side-nav {
+  top: 30%;
+ 
+  color: $color-1;
+  max-width: 100%;
+  height: 100vh;
+
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+
+  &__title-box {
+    padding-top: 5.2rem;
+    padding-left: 4.5rem;
+    line-height: 2.4rem;
+
+    &--heading {
+      font-family: $font-2;
+      font-weight: 300;
+      font-size: 3rem;
+    }
+
+    &--sub {
+      font-family: $font-1;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  &__list {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  &__item {
+    text-align: left;
+    margin-left: 4.5rem;
+    list-style-type: none;
+    margin-bottom: 5rem;
+  }
+
+  &__link {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $color-1;
+      transition: width 0.3s;
+    }
+
+    &:link,
+    &:visited {
+      position: relative;
+      text-decoration: none;
+      color: $color-1;
+    }
+
+    &:hover,
+    &:active {
+      &::after {
+        width: 100%;
+        transition: width 0.3s;
+      }
+    }
+  }
+
+  &__icon {
+    @include centerBox;
+    margin-left: 7rem;
+    fill: $color-1;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.icon-wide {
+  margin-left: 10rem;
+}
+
