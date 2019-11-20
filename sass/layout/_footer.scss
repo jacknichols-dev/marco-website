@@ -9,8 +9,8 @@
     @include respond(tab-port) {
       font-size: 3rem;
       margin-bottom: 6rem;
+      line-height: 1.2;
     }
-
 
     &.title-center {
       text-align: center;
@@ -19,11 +19,10 @@
     }
 
     &--social {
-
       @include respond(tab-port) {
         margin-bottom: 1.5rem;
+        line-height: 1.2;
       }
-  
     }
   }
 
@@ -166,9 +165,13 @@
 
   @include respond(tab-port) {
     padding-top: 0;
-    font-size: 2rem
+    font-size: 2rem;
   }
   @include respond(phone) {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+  }
+
+  &__heart {
+    animation: pulse 1s ease-in-out infinite;
   }
 }

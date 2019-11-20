@@ -13,5 +13,9 @@
     rgba($color-2, 0.3),
     rgba($color-2, 1)
   ); // rgb(242, 242, 244);
+  margin-left: 30rem;
 
+  @include respond(tab-port) {
+    margin-left: 0;
+  }
 }

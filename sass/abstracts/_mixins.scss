@@ -32,10 +32,10 @@ $breakpoint argument choices:
 @mixin respond($breakpoint) {
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
-      @content; 
+      @content;
     }
   }
-  @if $breakpoint == c {
+  @if $breakpoint == desktop-small {
     @media (min-width: 78.1em) {
       @content;
     }

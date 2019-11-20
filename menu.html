@@ -14,9 +14,13 @@
     <header class="menu-navigation" role="banner">
             <div class="navigation__bg">
 
-      <a href="index.html" class="menu-navigation__logo--link">
-        <img src="img/logo-dark.svg" type="image/svg" alt="logo" class="menu-navigation__logo"/>
-      </a>
+                    <a href="index.html" class="navigation__logo--link">
+                      <picture  class="navigation__logo">
+                        <source srcset="img/logo.svg"
+                            media="(max-width: 37.5em)">
+                        <img srcset="img/logo-dark.svg" type="image/svg" alt="logo"/>
+                      </picture>
+                    </a>
           <ul class="menu-navigation__list">
             <li class="menu-navigation__item"><a href="index.html" class="menu-navigation__link">Home</a></li>
             <li class="menu-navigation__item"><a href="menu.html" class="menu-navigation__link">Menu</a></li>

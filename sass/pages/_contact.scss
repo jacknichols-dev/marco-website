@@ -2,4 +2,9 @@
     position: relative;
     height: 110vh;
     color: $color-2;
+
+    @include respond(tab-port) {
+       height: 200vh;
+      }
+  
 }

@@ -3,10 +3,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 50rem;
-  margin-top: 50rem;
+  margin: 20rem 0 20rem 0;
 
   @include respond(tab-port) {
-    margin-top: 4rem;
+   margin: 2rem;
   }
 
   &__side {
@@ -24,7 +24,7 @@
     backface-visibility: hidden;
 
     @include respond(tab-port) {
-      top: 20rem;
+      
       height: 100%;
     }
 

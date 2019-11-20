@@ -70,7 +70,7 @@
   &.btn-food {
     color: $color-1;
     border: 1px solid $color-1;
-    margin-top: 12rem;
+    margin-top: 10rem;
     font-weight: bold;
     position: absolute;
     top: 25%;
@@ -80,7 +80,7 @@
 
 
   @include respond(tab-land) {
-    top: 30%;
+    top: 25%;
   }
 
 

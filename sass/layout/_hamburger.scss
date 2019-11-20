@@ -27,6 +27,14 @@
       right: 8rem;
     }
 
+    @include respond(phone) {
+      height: 5rem;
+      width: 5rem;
+      border: solid 0.1rem $color-blue;
+      top: 3rem;
+      right: 7rem;
+    }
+
     @include respond(phone-small) {
       height: 3rem;
       width: 3rem;
@@ -121,6 +129,10 @@
     position: relative;
     margin-top: 3.2rem;
 
+    @include respond(phone) {
+      margin-top: 2.3rem;
+    }
+
     @include respond(phone-small) {
       margin-top: .5rem;
     }
@@ -132,6 +144,10 @@
       height: 0.4rem;
       background-color: $color-blue;
       display: inline-block;
+
+      @include respond(phone) {
+        height: .22rem;
+      }
 
       @include respond(phone-small) {
         width: 2.8rem;

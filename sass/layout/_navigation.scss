@@ -33,7 +33,7 @@
 
     @include respond(phone) {
       width: 10rem;
-      left: 9rem;
+      left: 7rem;
     }
     @include respond(phone-small) {
       width: 7rem;
