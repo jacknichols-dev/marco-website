@@ -21,7 +21,7 @@
 #section-about {
   position: relative;
   padding: 13rem;
-  background-color: $color-2;
+  background-color: $color-grey;
 
   @include respond(tab-port) {
     padding: 8rem;
@@ -61,9 +61,7 @@
   background-image: linear-gradient(
     to left bottom,
     rgba($color-neon, 1) 0%,
-    rgba($color-neon, 0.9) 30%,
-    rgba($color-neon, 0.8) 60%,
-    rgba($color-neon, 0.7) 100%
+    rgba($color-blue, 0.9) 100%
   );
   background-position: center;
   background-size: cover;

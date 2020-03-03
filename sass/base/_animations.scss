@@ -73,3 +73,41 @@
     transform: scale(1);
   }
 }
+
+@keyframes reviewReveal {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  65% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  70% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  80% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
